@@ -4,6 +4,7 @@ import Day01
 import Day02
 import Day03
 import Day04
+import Day05
 
 main :: IO ()
 main = do
@@ -18,3 +19,5 @@ main = do
   countTrees'
   putStrLn "--Day 04--"
   countPassports
+  putStrLn "--Day 05--"
+  analyzeIDs
