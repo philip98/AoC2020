@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 63a0f6d0c6cd807fbc3f87f0d9a11f30037b976595aac23c03cda55bf0257939
+-- hash: d7a17880ad4fddeecb8fe286e95533ab0b17245fcb228915b0983824dbb9087b
 
 name:           aoc2020
 version:        0.1.0.0
@@ -29,6 +29,8 @@ library
   exposed-modules:
       Day01
       Day02
+      Day03
+      Day04
       Lib
   other-modules:
       Paths_aoc2020
@@ -38,6 +40,7 @@ library
       attoparsec
     , base >=4.7 && <5
     , text
+    , unordered-containers
   default-language: Haskell2010
 
 executable aoc2020-exe
@@ -52,6 +55,7 @@ executable aoc2020-exe
     , attoparsec
     , base >=4.7 && <5
     , text
+    , unordered-containers
   default-language: Haskell2010
 
 test-suite aoc2020-test
@@ -67,4 +71,5 @@ test-suite aoc2020-test
     , attoparsec
     , base >=4.7 && <5
     , text
+    , unordered-containers
   default-language: Haskell2010

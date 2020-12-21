@@ -4,9 +4,7 @@ module Day01
     ) where
 
 import Data.Foldable (fold, find)
-
-lift3 :: Applicative m => (a -> b -> c -> d) -> m a -> m b -> m c -> m d
-lift3 f x y z = f <$> x <*> y <*> z
+import Lib (lift3)
 
 listNumbers :: [Int] -> [(Int, Int)]
 listNumbers = fmap sumprod . fold . subsequents where
