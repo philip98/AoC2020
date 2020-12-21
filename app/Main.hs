@@ -5,6 +5,7 @@ import Day02
 import Day03
 import Day04
 import Day05
+import Day06
 
 main :: IO ()
 main = do
@@ -21,3 +22,5 @@ main = do
   countPassports
   putStrLn "--Day 05--"
   analyzeIDs
+  putStrLn "--Day 06--"
+  sumAnswers
